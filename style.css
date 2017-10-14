@@ -1,0 +1,23 @@
+body{
+	background-color:lightpink;
+	color:cyan;
+}
+
+img{
+	height:150px;
+}
+
+#container{
+	margin:30px;
+	background-color:hotpink;
+	color:chartreuse;
+	padding:15px;
+}
+
+a:link{
+	color:cyan;
+}
+
+a:visited{
+	color:white;
+}
