@@ -12,6 +12,7 @@ img{
 	background-color:hotpink;
 	color:chartreuse;
 	padding:15px;
+	border-radius:30px;
 }
 
 a:link{
@@ -20,4 +21,8 @@ a:link{
 
 a:visited{
 	color:white;
+}
+
+nav{
+	margin-bottom:25px;
 }
