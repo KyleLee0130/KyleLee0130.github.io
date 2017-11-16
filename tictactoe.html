@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>
+			Welcome!
+		</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<nav>
+				<a href="index.html">
+					Home
+				</a>
+				 | 
+				<a href="aboutme.html">
+					About Me
+				</a>
+				|
+				<a href="projects.html">
+					Projects
+				</a>
+			</nav>
+			<input type="button" value="Reset" />
+			<div id="board">
+				<div id="r1c1" class="box"onclick="turn('r1c1');" ></div>
+				<div id="r1c2" class="box"onclick="turn('r1c2');"></div>
+				<div id="r1c3" class="box"onclick="turn('r1c3');"></div>
+				<div id="r2c1" class="box"onclick="turn('r2c1');"></div>
+				<div id="r2c2" class="box"onclick="turn('r2c2');"></div>
+				<div id="r2c3" class="box"onclick="turn('r2c3');"></div>
+				<div id="r3c1" class="box"onclick="turn('r3c1');"></div>
+				<div id="r3c2" class="box"onclick="turn('r3c2');"></div>
+				<div id="r3c3" class="box"onclick="turn('r3c3');"></div>
+			</div>
+			<section id="results">
+				Click on square to start game!
+			</section>
+		</div>
+	</body>
+</html>
