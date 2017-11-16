@@ -40,14 +40,14 @@ function checkWinner(){
 	var r3c2 = document.getElementById("r3c2").innerHTML;
 	var r3c3 = document.getElementById("r3c3").innerHTML;
 
-	if((r1c1 == r1c2) && (r1c1 == r1c3) && (r1c1 != " ") ||
-	   (r2c1 == r2c2) && (r2c1 == r2c3) && (r2c1 != " ") ||
-	   (r3c1 == r3c2) && (r3c1 == r3c3) && (r3c1 != " ") ||
-	   (r1c1 == r2c1) && (r1c1 == r3c1) && (r1c1 != " ") ||
-	   (r1c2 == r2c2) && (r3c2 == r1c2) && (r1c2 != " ") ||
-	   (r1c3 == r1c3) && (r1c3 == r1c3) && (r1c3 != " ") ||
-	   (r1c1 == r2c2) && (r1c1 == r3c3) && (r1c1 != " ") ||
-	   (r1c3 == r2c2) && (r1c3 == r3c1) && (r1c3 != " ") || ){
+	if((r1c1 == r1c2) && (r1c1 == r1c3) && (r1c1 != "") ||
+	   (r2c1 == r2c2) && (r2c1 == r2c3) && (r2c1 != "") ||
+	   (r3c1 == r3c2) && (r3c1 == r3c3) && (r3c1 != "") ||
+	   (r1c1 == r2c1) && (r1c1 == r3c1) && (r1c1 != "") ||
+	   (r1c2 == r2c2) && (r1c2 == r3c2) && (r1c2 != "") ||
+	   (r1c3 == r2c3) && (r1c3 == r3c3) && (r1c3 != "") ||
+	   (r1c1 == r2c2) && (r1c1 == r3c3) && (r1c1 != "") ||
+	   (r1c3 == r2c2) && (r1c3 == r3c1) && (r1c3 != "")){
 
 		//update results with winner
 		document.getElementById("results").innerHTML = character + " is the winner!"
