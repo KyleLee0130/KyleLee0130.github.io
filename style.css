@@ -8,7 +8,7 @@ img{
 }
 
 #container{
-	margin:30px;
+	margin:40px;
 	background-color:hotpink;
 	color:chartreuse;
 	padding:15px;
@@ -27,6 +27,10 @@ nav{
 	margin-bottom:25px;
 }
 
+
+/*
+	CSS for Tic Tac Toe
+*/
 #board{
 	width:330px;
 	height:330px;
@@ -45,3 +49,24 @@ nav{
 	vertical-align:middle;
 	line-height:100px;
 }
+
+/*
+	CSS for Clickable
+*/
+
+#circle{
+	background-color:blue;
+	height:150px;
+	width:150px;
+	border-radius:150px;
+	position:relative;
+	top:50px;
+	left:50px;
+}
+
+
+
+
+
+
+

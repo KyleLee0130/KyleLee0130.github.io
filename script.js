@@ -1,14 +1,51 @@
 /*
+	Below is code for Clickable
+*/
+
+//when the circle is clicked, it moves to a random location
+function clickable(){
+
+	//make the circle disappear
+	document.getElementById("circle").style.visibility="hidden";
+
+	//some variable that holds how many times clicked
+
+	//alter the div that holds the count to this variable above
+}
+
+
+function moveCircle(){
+	
+	//get random value to add to top and left location
+	var randomValTop =Math.floor(Math.random() * 200);
+	var randomValLeft =Math.floor(Math.random() * 500);
+
+	//change top position of circle
+	document.getElementById("circle").style.top = randomValTop +"px";
+	
+	//change left position of circle
+	document.getElementById("circle").style.left = randomValLeft +"px";
+
+	//make circle reappear
+	document.getElementById("circle").style.visibility="visible";
+}
+
+
+
+
+/*
 	Below is code for Tic Tac Toe
 */
 
 //holds X or O
 var character = "O";
+var gameOver = false;
 
 //handles the player's turn
 function turn(location){
 
-	if (document.getElementById(location).innerHTML == ""){
+	if (document.getElementById(location).innerHTML == ""
+		&& !gameOver){
 
 		if(character == "O"){
 			character = "X";
@@ -51,10 +88,31 @@ function checkWinner(){
 
 		//update results with winner
 		document.getElementById("results").innerHTML = character + " is the winner!"
+
+		//there is a winner, so the game is over
+		gameOver = true;
+
+		//reset results div
+		document.getElementById("results").innerHTML = "Click on square to start game";
 	}
 }
 
+function resetGame(){
 
+	//reset ll boxes to blank
+	document.getElementById("r1c1").innerHTML = "";
+	document.getElementById("r1c2").innerHTML = "";
+	document.getElementById("r1c3").innerHTML = "";
+	document.getElementById("r2c1").innerHTML = "";
+	document.getElementById("r2c2").innerHTML = "";
+	document.getElementById("r2c3").innerHTML = "";
+	document.getElementById("r3c1").innerHTML = "";
+	document.getElementById("r3c2").innerHTML = "";
+	document.getElementById("r3c3").innerHTML = "";
+
+	//reset gameOver
+	gameOver = false;
+}
 
 /*
 	Below is code for Magic 8 Ball

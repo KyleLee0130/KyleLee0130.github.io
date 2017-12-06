@@ -1,9 +1,10 @@
 <html>
 	<head>
 		<title>
-			My Projects
+			Clickable!
 		</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
 	</head>
 	<body>
 		<div id="container">
@@ -20,25 +21,9 @@
 					Projects
 				</a>
 			</nav>
-			<section>
-				<ul>
-					<li>
-						<a href="magic8ball.html">
-							Magic 8 Ball
-						</a>
-					</li>
-					<li>
-						<a href="tictactoe.html">
-							Tic Tac Toe
-						</a>
-					</li>
-					<li>
-						<a href="clickable.html">
-							Clickable
-						</a>
-					</li>
-				</ul>
-			</section>
+			<div id="circle" onclick="clickable();window.setTimeout(moveCircle, 2000);">
+				
+			</div>
 	</div>
 	</body>
 </html>
